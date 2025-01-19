@@ -1,2 +1,10 @@
-Flask 
+Flask
 gunicorn
+jupyter
+ipykernel
+pandas
+numpy
+matplotlib
+scikit-learn
+notebook
+arff
