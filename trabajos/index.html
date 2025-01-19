@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S I M U L A C I O N:</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+            background-size: 300% 300%;
+            animation: gradientBackground 6s ease infinite;
+            color: #dcdcdc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+    
+        h1 {
+            font-size: 3em;
+            color: #00c6ff;
+            text-shadow: 0 0 10px rgba(0, 198, 255, 0.8), 0 0 20px rgba(0, 198, 255, 0.6);
+            margin-bottom: 20px;
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+    
+        p {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #b0bec5;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+        }
+    
+        /* Contenedor de botones */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Espaciado entre los botones */
+            width: 100%;
+            max-width: 400px;
+        }
+    
+        /* Estilo de los botones */
+        button {
+            background: linear-gradient(45deg, #2b5876, #4e4376);
+            color: #dcdcdc;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 25px;
+            font-size: 1.3em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.4s, box-shadow 0.4s;
+            box-shadow: 0 10px 25px rgba(78, 67, 118, 0.6);
+        }
+    
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 35px rgba(43, 88, 118, 0.7);
+        }
+    
+        button:active {
+            transform: scale(1);
+            box-shadow: 0 5px 15px rgba(43, 88, 118, 0.5);
+        }
+    
+        /* Animación del fondo */
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    
+        /* Animación de resplandor para el título */
+        @keyframes glow {
+            from { text-shadow: 0 0 10px rgba(0, 198, 255, 0.8), 0 0 20px rgba(0, 198, 255, 0.6); }
+            to { text-shadow: 0 0 20px rgba(0, 198, 255, 1), 0 0 30px rgba(0, 198, 255, 0.8); }
+        }
+    
+        /* Diseño responsivo */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+    
+            button {
+                font-size: 1.1em;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <h1>S I M U L A C I O N:</h1>
+    <p>Documentacion:</p>
+
+    <form action="/execute" method="post">
+        
+        <button type="submit" name="notebook" value="Evalucion_de_resultados.py">Evalucion Reesultados</button>
+        <button type="submit" name="notebook" value="support_vector_machine.py">Suport Vector Machine</button>
+        <button type="submit" name="notebook" value="transformadores_y_pipelines.py">Transformadores y pipelines</button>
+        <button type="submit" name="notebook" value="preparacion_del_DataSet.py">Preparacion DataSet</button>
+        <button type="submit" name="notebook" value="Division_del_DataSet.py">Division del Dataset</button>
+        <button type="submit" name="notebook" value="Visualizacion-de-Datos.py">Visualizacion Datos</button><button type="submit" name="notebook" value="Division_del_DataSet.py">Division del Dataset</button>
+        <button type="submit" name="notebook" value="decision_trees_android_malware_detection.py">Decision trees ndroid malware detection</button>
+    </form>
+</body>
+</html>
