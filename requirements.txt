@@ -8,3 +8,4 @@ matplotlib
 scikit-learn
 notebook
 arff
+matplotlib
